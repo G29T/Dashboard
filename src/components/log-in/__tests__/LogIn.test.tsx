@@ -21,7 +21,7 @@ describe('Login Component', () => {
         expect(screen.getByText(/Welcome Back/i)).toBeInTheDocument();
         expect(screen.getByPlaceholderText(/Email/i)).toBeInTheDocument();
         expect(screen.getByPlaceholderText(/Password/i)).toBeInTheDocument();
-        expect(screen.getByRole('button', { name: /Login/i })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /Log In/i })).toBeInTheDocument();
     });
 
     it('shows an error message for invalid login', async () => {
@@ -35,7 +35,7 @@ describe('Login Component', () => {
             target: { value: 'InvalidPassword' },
         });
 
-        fireEvent.click(screen.getByRole('button', { name: /Login/i }));
+        fireEvent.click(screen.getByRole('button', { name: /Log In/i }));
 
         // Check that the error message is displayed
         await waitFor(() => {
@@ -66,7 +66,7 @@ describe('Login Component', () => {
         });
 
         // Submit the form
-        fireEvent.click(screen.getByRole('button', { name: /Login/i }));
+        fireEvent.click(screen.getByRole('button', { name: /Log In/i }));
 
         // Wait for the navigate function to be called
         await waitFor(() => {
@@ -87,7 +87,7 @@ describe('Login Component', () => {
         });
 
         // Submit the form
-        fireEvent.click(screen.getByRole('button', { name: /Login/i }));
+        fireEvent.click(screen.getByRole('button', { name: /Log In/i }));
 
         // Check that the error message is displayed
         await waitFor(() => {
