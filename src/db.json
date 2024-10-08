@@ -1,0 +1,79 @@
+{
+  "metrics": {
+    "dailyImpressions": 29200,
+    "ad_requests": 50000,
+    "revenue": 325.00,
+    "data": [
+      {
+        "date": "2024-09-10",
+        "impressions": 11521,
+        "ad_requests": 17028,
+        "revenue": 288.00,
+        "location": "North America"
+      },
+      {
+        "date": "2024-09-11",
+        "impressions": 13000,
+        "ad_requests": 20000,
+        "revenue": 300.00,
+        "location": "Europe"
+      },
+      {
+        "date": "2024-09-12",
+        "impressions": 15000,
+        "ad_requests": 22000,
+        "revenue": 350.00,
+        "location": "North America"
+      },
+      {
+        "date": "2024-09-13",
+        "impressions": 16000,
+        "ad_requests": 24000,
+        "revenue": 400.00,
+        "location": "Europe"
+      },
+      {
+        "date": "2024-09-14",
+        "impressions": 18000,
+        "ad_requests": 26000,
+        "revenue": 450.00,
+        "location": "North America"
+      },
+      {
+        "date": "2024-09-15",
+        "impressions": 17000,
+        "ad_requests": 25000,
+        "revenue": 420.00,
+        "location": "Europe"
+      },
+      {
+        "date": "2024-09-16",
+        "impressions": 19000,
+        "ad_requests": 28000,
+        "revenue": 500.00,
+        "location": "North America"
+      },
+      {
+        "date": "2024-09-17",
+        "impressions": 20000,
+        "ad_requests": 29000,
+        "revenue": 520.00,
+        "location": "Europe"
+      },
+      {
+        "date": "2024-09-18",
+        "impressions": 21000,
+        "ad_requests": 30000,
+        "revenue": 600.00,
+        "location": "North America"
+      },
+      {
+        "date": "2024-09-19",
+        "impressions": 22000,
+        "ad_requests": 31000,
+        "revenue": 650.00,
+        "location": "Europe"
+      }
+    ]
+  }
+}

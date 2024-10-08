@@ -1,0 +1,58 @@
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-label {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.datepicker,
+.location-select {
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 20px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.datepicker:focus,
+.location-select:focus {
+    border-color: #0056b3;
+}
+
+.date-filter-container {
+    display: flex;
+    }
+
+@media (max-width: 768px) {
+    .filters-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px;
+    }
+
+    .date-filter-container {
+        flex-direction: column; 
+        align-items: flex-start;
+        }
+
+        .start-date-filter-container {
+        margin-bottom: 10px;
+        }
+
+    .datepicker,
+    .location-select {
+        width: fit-content; 
+        margin-right: 0;
+    }
+}

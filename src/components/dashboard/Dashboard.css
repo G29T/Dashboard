@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.metrics-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.metrics-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    margin-bottom: 20px; 
+}
+
+.metric-card {
+    flex: 0 1 200px;
+    max-width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metric-title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.metric-value {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.loading-spinner {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .dashboard-title {
+        font-size: 1.5rem;
+    }
+
+    .metrics-grid {
+        gap: 10px; /* Reduce gap between items on smaller screens */
+    }
+
+    .metric-card {
+        flex: 0 1 150px; /* Set a smaller base width for cards */
+        max-width: 100%;
+        padding: 10px; /* Adjust padding */
+        font-size: 1rem; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-title {
+        font-size: 1.2rem; /* Further reduce title size on very small screens */
+    }
+
+    .metric-card {
+        flex: 0 1 120px; /* Further reduce the base width */
+        padding: 8px; /* Reduce padding further */
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+}
