@@ -2,6 +2,27 @@
 
 Developed a responsive dashboard component, behind a sign in/up page, using React.
 
+In this project, I utilized Firebase to handle user authentication via email and password. Firebase provides a secure and efficient way to manage user sign-up, login, and session handling, allowing users to access the app with their credentials.
+
+## Setting Up Firebase
+
+To use Firebase authentication in your local environment, you will need to create a .env file with your Firebase project credentials. This file will not be included in the GitHub repository for security reasons, as it contains sensitive information.
+
+- Begin by cloning the repository to your local machine.
+- Create a Firebase Project
+- Get Your Firebase Configuration: In your Firebase project settings, you will find your project's configuration. This includes details like API key, Auth domain, Project ID, etc.
+- Create a .env File
+
+## Example of .env file
+
+REACT_APP_FIREBASE_API_KEY=YOUR_FIREBASE_API_KEY
+REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
+REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
+REACT_APP_FIREBASE_MEASUREMENT_ID=YOUR_MEASUREMENT_ID
+
 ## Future Developments
 
 - Use Tailwind
@@ -18,7 +39,8 @@ Developed a responsive dashboard component, behind a sign in/up page, using Reac
 
 ## Prerequisites
 
-- Node.js installed on your machine npm
+- Node.js installed on your machine
+- yarn install
 
 ## Installation
 
