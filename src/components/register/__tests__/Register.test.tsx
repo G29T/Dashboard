@@ -5,6 +5,12 @@ import * as authUtils from '../../../utils/auth';
 import { useNavigate } from 'react-router-dom';
 import { UserCredential } from 'firebase/auth';
 
+// Mock Firebase Auth functions
+jest.mock('firebase/auth', () => ({
+    getAuth: jest.fn(),
+    createUserWithEmailAndPassword: jest.fn(),
+}));
+
 // Mock the useNavigate hook
 jest.mock('react-router-dom', () => ({
     useNavigate: jest.fn(),
@@ -18,11 +24,11 @@ describe('Register Component', () => {
         user: {
             uid: '12345',
             email: 'test@example.com',
-            providerId: 'firebase',  
+            providerId: 'firebase',
         },
         additionalUserInfo: null,
         operationType: 'signIn',
-        providerId: 'firebase',  
+        providerId: 'firebase',
     } as unknown as UserCredential;
 
     beforeEach(() => {
@@ -57,7 +63,7 @@ describe('Register Component', () => {
     });
 
     it('calls register and navigates on successful registration', async () => {
-        // Mock the register function
+        // Mock the register function to return the mockUserCredential
         jest.spyOn(authUtils, 'register').mockResolvedValueOnce(mockUserCredential);
 
         // Enter valid credentials
