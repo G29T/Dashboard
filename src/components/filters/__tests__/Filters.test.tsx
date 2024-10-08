@@ -28,15 +28,15 @@ describe('Filters Component', () => {
 
     it('updates start date when a new date is selected', () => {
         const newDate = new Date(2023, 1, 1); // February 1, 2023
-
-        // Simulate changing the start date
+    
         fireEvent.change(screen.getByLabelText(/Start Date:/i), {
             target: { value: newDate.toISOString().substring(0, 10) },
         });
-
+    
         expect(mockSetFilters).toHaveBeenCalledWith({
-            ...mockFilters,
             startDate: newDate,
+            endDate: newDate, 
+            location: 'All Locations', 
         });
     });
 
