@@ -12,6 +12,7 @@ Developed a responsive dashboard component, behind a sign in/up page, using Reac
 
 - React.js
 - JavaScript
+- TypeScript
 - Jest
 
 ## Prerequisites
@@ -26,8 +27,8 @@ Developed a responsive dashboard component, behind a sign in/up page, using Reac
 
 ## Available Scripts
 
-### to run the json-server `npx json-server --watch db.json --port 5000`
+- to run the json-server `npx json-server --watch db.json --port 5000`
 
-### `yarn start`
+- `yarn start`
 
-### `yarn test`
+- `yarn test`
