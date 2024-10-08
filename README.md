@@ -49,9 +49,9 @@ REACT_APP_FIREBASE_MEASUREMENT_ID=YOUR_MEASUREMENT_ID
 
 ## Available Scripts
 
-You must run both `yarn start` and `npx json-server --watch db.json --port 5000`
+You must run both `yarn start` and `npx json-server --watch db.json --port 5000` (run this inside src)
 
-- to run the json-server `npx json-server --watch db.json --port 5000`
+- run the json-server `npx json-server --watch db.json --port 5000` inside the src
 
 - `yarn start`
 
