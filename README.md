@@ -46,7 +46,6 @@ REACT_APP_FIREBASE_MEASUREMENT_ID=YOUR_MEASUREMENT_ID
 
 - Clone the repository to your local machine.
 - Navigate to the project directory: cd Dashboard
-- Install dependencies: npm install
 
 ## Available Scripts
 
