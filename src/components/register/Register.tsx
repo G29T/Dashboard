@@ -61,7 +61,7 @@ const Register = () => {
             </form>
             <p className="auth-footer">
                 Already have an account?{' '}
-                <button className="auth-link" onClick={() => navigate('/login')}>Sign In</button> {/* Sign In button */}
+                <button className="auth-link" onClick={() => navigate('/login')}>Log In</button>
             </p>
         </div>
     );
