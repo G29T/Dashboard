@@ -25,7 +25,7 @@ describe('Chart Component', () => {
     const { getByText } = render(
         <Chart
             metrics={emptyMetrics}
-            selectedLocation="All"
+            selectedLocation="All Locations"
             startDate={new Date()}
             endDate={new Date()}
         />
