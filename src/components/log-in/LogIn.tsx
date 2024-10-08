@@ -45,7 +45,7 @@ const Login = () => {
           required
           className="auth-input"
         />
-        <button type="submit" className="auth-button">Login</button>
+        <button type="submit" className="auth-button">Log In</button>
       </form>
       <p className="auth-footer">
         Don't have an account?{' '}
