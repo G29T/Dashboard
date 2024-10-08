@@ -2,7 +2,7 @@
 
 Developed a responsive dashboard component, behind a sign in/up page, using React.
 
-In this project, I utilized Firebase to handle user authentication via email and password. Firebase provides a secure and efficient way to manage user sign-up, login, and session handling, allowing users to access the app with their credentials.
+In this project, I utilised Firebase to handle user authentication via email and password. Firebase provides a secure and efficient way to manage user sign-up, login, and session handling, allowing users to access the app with their credentials.
 
 ## Setting Up Firebase
 
