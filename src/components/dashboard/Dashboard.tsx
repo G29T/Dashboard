@@ -45,15 +45,17 @@ const Dashboard = () => {
     };
 
     // Function to log the user out and navigate them back to the login screen
-    const handleLogout = async () => {
+    const handleSignOut = async () => {
         await logout();
         navigate('/login'); 
     };
 
     return (
         <div className="dashboard-container">
-            <h1 className="dashboard-title">Ad Metrics Dashboard</h1>
-            <button onClick={handleLogout}>Sign Out</button>
+            <div className="header">
+                <h1 className="dashboard-title">Ad Metrics Dashboard</h1>
+                <button className="sign-out-button" onClick={handleSignOut}>Sign Out</button>
+            </div>
             <Filters filters={filters} setFilters={setFilters} />
             {loading ? (
                 <div className="loading-spinner">Loading...</div>

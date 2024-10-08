@@ -14,11 +14,32 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
 .dashboard-title {
     text-align: center;
     color: #333;
     font-size: 2rem;
     margin-bottom: 20px;
+    flex: 1;
+}
+
+.sign-out-button {
+    background-color: #ff4c4c; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.sign-out-button:hover {
+    background-color: #ff0000; 
 }
 
 .metrics-container {
