@@ -46,11 +46,13 @@ const Chart = ({ metrics, selectedLocation, startDate, endDate }: ChartProps) =>
 
     // Filter entries based on the selected location and date range
     const entries = metrics.data.filter(entry => {
-        const entryDate = new Date(entry.date);
+        const entryDate = new Date(entry.date).setHours(0, 0, 0, 0); 
+        const start = new Date(startDate).setHours(0, 0, 0, 0);
+        const end = new Date(endDate).setHours(23, 59, 59, 999);
+    
         return (
-            (selectedLocation === 'All' || entry.location === selectedLocation) &&
-            entryDate >= startDate &&
-            entryDate <= endDate
+            (selectedLocation === 'All Locations' || entry.location === selectedLocation) &&
+            entryDate >= start && entryDate <= end
         );
     });
 
