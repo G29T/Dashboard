@@ -9,6 +9,24 @@ interface FiltersProps {
 }
 
 const Filters = ({ filters, setFilters }: FiltersProps) => {
+    const handleStartDateChange = (date: Date | null) => {
+        if (date && date > filters.endDate) {
+            // If the selected start date is after the end date, automatically adjust the end date
+            setFilters({ ...filters, startDate: date, endDate: date });
+        } else if (date) {
+            setFilters({ ...filters, startDate: date });
+        }
+    };
+
+    const handleEndDateChange = (date: Date | null) => {
+        if (date && date < filters.startDate) {
+            // If the selected end date is before the start date, automatically adjust the start date
+            setFilters({ ...filters, startDate: date, endDate: date });
+        } else if (date) {
+            setFilters({ ...filters, endDate: date });
+        }
+    };
+
     return (
         <div className="filters-container">
             <div className="date-filter-container">
@@ -20,11 +38,7 @@ const Filters = ({ filters, setFilters }: FiltersProps) => {
                         <DatePicker
                             id="start-date"
                             selected={filters.startDate}
-                            onChange={(date: Date | null) => {
-                                if (date) {
-                                    setFilters({ ...filters, startDate: date });
-                                }
-                            }} 
+                            onChange={handleStartDateChange}
                             className="datepicker"
                             dateFormat="yyyy/MM/dd" 
                         />
@@ -38,11 +52,7 @@ const Filters = ({ filters, setFilters }: FiltersProps) => {
                         <DatePicker
                             id="end-date"
                             selected={filters.endDate}
-                            onChange={(date: Date | null) => {
-                                if (date) {
-                                    setFilters({ ...filters, endDate: date });
-                                }
-                            }} 
+                            onChange={handleEndDateChange}
                             className="datepicker"
                             dateFormat="yyyy/MM/dd"
                         />
@@ -60,7 +70,7 @@ const Filters = ({ filters, setFilters }: FiltersProps) => {
                     value={filters.location}
                     onChange={(e) => setFilters({ ...filters, location: e.target.value })}
                 >
-                    <option value="All">All Locations</option>
+                    <option value="All Locations">All Locations</option>
                     <option value="North America">North America</option>
                     <option value="Europe">Europe</option>
                     <option value="Asia">Asia</option>
