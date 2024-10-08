@@ -18,7 +18,7 @@ describe('Chart Component', () => {
         };
 
         const { getByText } = render(
-            <Chart metrics={emptyMetrics} selectedLocation="All" startDate={new Date()} endDate={new Date()} />
+            <Chart metrics={emptyMetrics} selectedLocation="All Locations" startDate={new Date()} endDate={new Date()} />
         );
 
         expect(getByText(/No data available/i)).toBeInTheDocument();
