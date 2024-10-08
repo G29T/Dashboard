@@ -11,7 +11,7 @@ To use Firebase authentication in your local environment, you will need to creat
 - Begin by cloning the repository to your local machine.
 - Create a Firebase Project
 - Get Your Firebase Configuration: In your Firebase project settings, you will find your project's configuration. This includes details like API key, Auth domain, Project ID, etc.
-- Create a .env File
+- Create a .env file
 
 ## Example of .env file
 
